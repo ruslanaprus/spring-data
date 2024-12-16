@@ -34,21 +34,16 @@ private Long id;
 
 1. Clone the repository:
 ```shell
-git clone git@github.com:ruslanaprus/spring-data.git
-cd spring-data
+git clone git@github.com:ruslanaprus/spring-data-sqlite.git
+cd spring-data-sqlite
 ```
 2. Database Configuration: Copy the `.env.example` file into `.env`, and populate it with your DB details (key: [DB_URL]). This file will be used to set DB properties for Flyway plugin in `build.gradle` and for your application.
 
-
-3. Run Flyway Migration: To apply database migrations, run:
-```shell
-gradle flywayMigrate
-```
-4. Build the project:
+3. Build the project:
 ```shell
 ./gradlew clean build
 ```
-5. Run the application:
+4. Run the application:
 ```shell
 ./gradlew bootRun
 ```
